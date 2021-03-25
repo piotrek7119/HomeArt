@@ -3,11 +3,11 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <section>
+        <header>
             <p>
                 hello world
             </p>
-        </section>
+        </header>
     )
 }
 

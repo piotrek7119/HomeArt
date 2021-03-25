@@ -3,11 +3,11 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <section>
+        <footer>
             <p>
                 hello world
             </p>
-        </section>
+        </footer>
     )
 }
 
