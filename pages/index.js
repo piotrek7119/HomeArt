@@ -1,8 +1,12 @@
 import Head from 'next/head';
+
 import Layout from '../layout/layout.js';
 import Hero from '../components/heroImage.js';
+import About from '../components/about.js';
+import Offer from '../components/offer.js';
+import Realisation from '../components/realisations.js';
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout>
       <section>
@@ -12,7 +16,12 @@ export default function Home() {
         </Head>
 
         <Hero/>
+        <About/>
+        <Offer/>
+        <Realisation/>
       </section>
     </Layout>
   )
 }
+
+export default Home;
