@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {createGlobalStyle} from 'styled-components';
 import Head from 'next/head';
 
 
 import Header from '../components/header';
 import Footer from '../components/footer';
+import NavBar from '../components/NavBar';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -20,6 +21,19 @@ body {
 
 
 const Layout = ({children}) => {
+
+        const [isVisible, setIsVisible] = useState(false);
+
+    const handleClick = () => {
+        if(!isVisible) {
+            setIsVisible(!isVisible);
+            console.log(isVisible)
+        } else {
+            setIsVisible(!isVisible);
+            console.log(isVisible)
+        }
+    }
+
     return (
         <section>
             <Head>
@@ -27,7 +41,8 @@ const Layout = ({children}) => {
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/> 
             </Head>
             <GlobalStyle/>
-            <Header/>
+            <Header visibility={isVisible} isVisible={handleClick}/>
+            <NavBar isVisible={isVisible} visibility={handleClick}/>
             {children}
             <Footer/>
         </section>

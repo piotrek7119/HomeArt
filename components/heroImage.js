@@ -37,7 +37,7 @@ const Container = styled.section`
 
 const Hero = () => {
     return (
-        <Container>
+        <Container id='home'>
             <Image
                 src='/HeroImage.jpg'
                 layout='fill'

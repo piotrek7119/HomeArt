@@ -4,12 +4,19 @@ import Image from 'next/image'
 
 const Container = styled.footer`
     width: 100%;
-
-    background: #b0b0b0;
+    margin: 0;
+    background: #b2b2b2;
      display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     align-items: flex-end;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+     }
 
 `;
 
@@ -22,11 +29,13 @@ flex-direction: column;
 align-items: flex-start;
 
 a {
-    margin-bottom: 10px;
     color: #ffffff;
+    margin: 7px 5px 0 0;
 }
 
 h2 {
+    margin: 20px 5px 0 0;
+    font-size: 18px;
     color: #ffffff;
 }
 
@@ -38,16 +47,35 @@ width: 50%;
 margin: 15px 0 15px 15px;
 `
 
+const InnerDiv = styled.div`
+
+width: 100%;
+margin: 0;
+background: #222121;
+z-index: 99;
+color: white;
+
+p {
+    margin: 3px;
+    font-size: 10px;
+}
+`;
+
 
 
 const Footer = () => {
     return (
-        <Container>
+        <Container id='contact'>
+            <section>
             <ContactInfoStyled>
+                <Image
+                    src='/HOMEART text.png'
+                    layout='fixed'
+                    width={150}
+                    height={30}
+                />
                 <h2>KONTAKT</h2>
-                <i></i>
                 <a href='tel:+48 506 251 009'>+48 506 251 009</a>
-                <i></i>
                 <a href='email:biurp@home-art.pl'>biuro@home-art.pl</a>
             </ContactInfoStyled>
             <ImageOuterStyled>
@@ -58,6 +86,13 @@ const Footer = () => {
                     height={100}
                 />
             </ImageOuterStyled>
+            </section>
+            <InnerDiv>
+                <p>SOLEO ENERGIA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCI</p>
+                <p>NIP: 9542822097</p>
+                <p>REGON: 387879890</p>
+                <p>KRS: 0000877414</p>
+            </InnerDiv>
             
         </Container>
     )

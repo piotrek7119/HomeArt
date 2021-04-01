@@ -34,7 +34,7 @@ const Container = styled.section`
 
 const Offer = () => {
     return (
-        <Container>
+        <Container id='offer'>
             <div>
                 <h2>
                     OFERTA

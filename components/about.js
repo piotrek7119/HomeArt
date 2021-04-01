@@ -34,7 +34,7 @@ const Container = styled.section`
 
 const About = () => {
     return (
-        <Container>
+        <Container id='about'>
             <div>
                 <h2>
                     O NAS

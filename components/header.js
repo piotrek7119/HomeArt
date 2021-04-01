@@ -1,17 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const Container = styled.header`
     position: fixed;
     z-index: 9999;
-    margin-top: 15px;
+    padding: 15px 0 15px 0;
     width: 100%;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
+    
 `
 
 
@@ -39,15 +42,18 @@ const HamburgerSpanFirst = styled.span`
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 45%;
+    top: 40%;
     
     width: 35px;
     height: 3px;
     background: #ffffff;
     border-radius: 25px;
+
+    transform: ${props => props.animation ? `translateY(200%) rotate(225deg)` : `translateY(0)`};
+    transition: all 0.3s ease-in-out;
 `;
 
-
+//${props => props.color ? '#b2b2b2' : '#ffffff'}
 const HamburgerSpanSecond = styled.span`
     position: absolute;
     margin: 0;
@@ -58,20 +64,27 @@ const HamburgerSpanSecond = styled.span`
     height: 3px;
     background: #ffffff;
     border-radius: 25px;
+
+    transform: ${props => props.animation ? `translateY(-160%) rotate(315deg)` : `translateY(0)`};
+    transition: all 0.3s ease-in-out;
 `
 
-const Header = () => {
+const Header = ({isVisible, visibility}) => {
     return (
         <Container>
-                <Image
-                    src='/HOMEART biel bok.png'
-                    layout='fixed'
-                    width={200}
-                    height={60}
-                />
-                <HamburgerButtonStyled>
-                    <HamburgerSpanFirst/>
-                    <HamburgerSpanSecond/>
+                <Link href="#home">
+                    <a>
+                        <Image
+                        src='/HOMEART biel bok.png'
+                        layout='fixed'
+                        width={150}
+                        height={50}
+                        />
+                    </a>
+                </Link>
+                <HamburgerButtonStyled onClick={isVisible}>
+                    <HamburgerSpanFirst color={visibility} animation={visibility} />
+                    <HamburgerSpanSecond color={visibility} animation={visibility}/>
                 </HamburgerButtonStyled>
         </Container>
     )
