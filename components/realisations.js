@@ -45,20 +45,20 @@ const data = [
     {
         id: '0',
         label: "lat w branży",
-        number: "100",
-        duration: 2
+        number: "5",
+        duration: 1
     },
     {
         id: '1',
         label: "% zadowolonych klientów",
-        number: "100",
+        number: "99",
         duration: 2
     },
     {
         id: '2',
         label: "wykonanych realizacji",
-        number: "100",
-        duration: 2
+        number: "50",
+        duration: 1
     },    
   ]
   
