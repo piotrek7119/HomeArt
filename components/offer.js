@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 
+
 const Container = styled.section`
 
     width: 100%;
@@ -45,10 +46,10 @@ const Offer = () => {
             </div>
             <div>
                 <Image
-                    src='/HeroImage.jpg'
-                    layout='fixed'
-                    width={300}
-                    height={300}
+                    src='/Mariacka 1.jpg'
+                    layout='intrinsic'
+                    width={4032}
+                    height={2268}
                 />
             </div>
             

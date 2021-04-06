@@ -13,6 +13,34 @@ scroll-behavior: smooth;
 
 `;
 
+
+const data = [
+  {
+      id: '0',
+      number: "100",
+      duration: 2
+  },
+  {
+      id: '1',
+      number: "100",
+      duration: 2
+  },
+  {
+      id: '2',
+      number: "100",
+      duration: 2
+  },    
+]
+
+
+
+//lat w branży
+//% zadowolonych klientów
+//wykonanych realizacji
+
+
+
+
 const Home = () => {
   return (
     <Layout>
@@ -21,7 +49,7 @@ const Home = () => {
           <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
+        
         <Hero/>
         <About/>
         <Offer/>

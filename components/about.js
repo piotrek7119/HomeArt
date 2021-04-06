@@ -45,10 +45,10 @@ const About = () => {
             </div>
             <div>
                 <Image
-                    src='/HeroImage.jpg'
-                    layout='fixed'
-                    width={300}
-                    height={300}
+                    src='/Ruda 1.jpg'
+                    layout='intrinsic'
+                    width={4032}
+                    height={2268}
                 />
             </div>
             

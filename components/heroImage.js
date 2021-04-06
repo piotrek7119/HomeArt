@@ -4,11 +4,12 @@ import Image from 'next/image';
 
 const Container = styled.section`
   position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
   margin: 0;
   padding: 0;
-  
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,12 +26,22 @@ const Container = styled.section`
   };
 
   h1 {
+      position: absolute;
       margin: 20px;
        z-index: 2;
        color: #ffffff;
        font-size: 35px;
        text-align: center;
+
     }
+`;
+
+const ImageStyled = styled(Image)`
+width: 100%;
+height: 100vh;
+object-fit: cover;
+object-position: 90% 0;
+
 `;
 
 
@@ -38,9 +49,10 @@ const Container = styled.section`
 const Hero = () => {
     return (
         <Container id='home'>
-            <Image
+            <ImageStyled
                 src='/HeroImage.jpg'
                 layout='fill'
+                quality={100}
             />
             <h1>
                 Profesjonalne wykoczenia wnętrz

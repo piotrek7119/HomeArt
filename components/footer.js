@@ -58,6 +58,8 @@ color: white;
 p {
     margin: 3px;
     font-size: 10px;
+    text-decoration: none;
+    color: #ffffff;
 }
 `;
 
@@ -88,10 +90,9 @@ const Footer = () => {
             </ImageOuterStyled>
             </section>
             <InnerDiv>
-                <p>SOLEO ENERGIA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCI</p>
-                <p>NIP: 9542822097</p>
-                <p>REGON: 387879890</p>
-                <p>KRS: 0000877414</p>
+                <p>HomeArt Szymon Pawliński</p>
+                <p>NIP: 6342981352</p>
+                <p>REGON: 387020793</p>
             </InnerDiv>
             
         </Container>

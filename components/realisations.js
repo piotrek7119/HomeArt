@@ -1,5 +1,7 @@
-import React from 'react';
+import Link from 'next/link';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import Counter from './couter';
 
 const Container = styled.section`
 
@@ -14,21 +16,70 @@ const Container = styled.section`
 
     h2 {
         margin: 15px;
-    }      
+    }
+
+    a {
+        align-self: center;
+        margin: 20px;
+    }
 `;
 
+
+
+const ButtonStyled = styled.button`
+
+width: 150px;
+height: 40px;
+
+background: #222121;
+border: none;
+border-radius: 25px;
+
+color: #ffffff;
+font-weight: 900;
+cursor: pointer;
+
+`;
+
+const data = [
+    {
+        id: '0',
+        label: "lat w branży",
+        number: "100",
+        duration: 2
+    },
+    {
+        id: '1',
+        label: "% zadowolonych klientów",
+        number: "100",
+        duration: 2
+    },
+    {
+        id: '2',
+        label: "wykonanych realizacji",
+        number: "100",
+        duration: 2
+    },    
+  ]
+  
+  
+
+
 const Realisation = () => {
+
+
+
     return (
         <Container id='realisation'>
-            <h2>
-                x wykonanych realizacji
-            </h2>
-            <h2>
-                x% zadowolonych klientów
-            </h2>
-            <h2>
-                x lat w branży
-            </h2>
+            <Counter counter={data}/>
+            
+            <Link href="portfolio">
+            <a>
+                <ButtonStyled>
+                    Zobacz realizacje
+                </ButtonStyled>
+            </a>
+            </Link>
         </Container>
     )
 }

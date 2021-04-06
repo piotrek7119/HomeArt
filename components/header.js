@@ -53,7 +53,6 @@ const HamburgerSpanFirst = styled.span`
     transition: all 0.3s ease-in-out;
 `;
 
-//${props => props.color ? '#b2b2b2' : '#ffffff'}
 const HamburgerSpanSecond = styled.span`
     position: absolute;
     margin: 0;
@@ -72,7 +71,7 @@ const HamburgerSpanSecond = styled.span`
 const Header = ({isVisible, visibility}) => {
     return (
         <Container>
-                <Link href="#home">
+                <Link href="/">
                     <a>
                         <Image
                         src='/HOMEART biel bok.png'
