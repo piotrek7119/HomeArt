@@ -13,7 +13,7 @@ const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 9999;
     background: #222121;
     
 
@@ -35,27 +35,27 @@ const NavBar = ({isVisible, visibility}) => {
 
     return (
         <Container visible={isVisible} animation={isVisible}>
-            <Link href='#home'>
+            <Link href='/#home'>
                 <AnchorStyled onClick={visibility}>
                     HOME
                 </AnchorStyled>
             </Link>
-            <Link href='#about'>
+            <Link href='/#about'>
                 <AnchorStyled onClick={visibility}>
                     O NAS
                 </AnchorStyled>
             </Link>
-            <Link href='#offer'>
+            <Link href='/#offer'>
                 <AnchorStyled onClick={visibility}>
                     OFERTA
                 </AnchorStyled>
             </Link>
-            <Link href='#realisation'>
+            <Link href='/portfolio'>
                 <AnchorStyled onClick={visibility}>
                     REALIZACJA
                 </AnchorStyled>
             </Link>
-            <Link href='#contact'>
+            <Link href='/#contact'>
                 <AnchorStyled onClick={visibility}>
                     KONTAKT
                 </AnchorStyled>

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Container = styled.header`
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
     padding: 15px 0 15px 0;
     width: 100%;
 
@@ -34,7 +34,7 @@ const HamburgerButtonStyled = styled.button`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 999999;
+  z-index: 99999;
   
 `;
 

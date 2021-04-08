@@ -10,35 +10,9 @@ import Realisation from '../components/realisations.js';
 const Container = styled.section`
 
 scroll-behavior: smooth;
+overflow: hidden;
 
 `;
-
-
-const data = [
-  {
-      id: '0',
-      number: "100",
-      duration: 2
-  },
-  {
-      id: '1',
-      number: "100",
-      duration: 2
-  },
-  {
-      id: '2',
-      number: "100",
-      duration: 2
-  },    
-]
-
-
-
-//lat w branży
-//% zadowolonych klientów
-//wykonanych realizacji
-
-
 
 
 const Home = () => {
@@ -46,11 +20,10 @@ const Home = () => {
     <Layout>
       <Container>
         <Head>
-          <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        
-        <Hero/>
+
+        <Hero>Profesjonalne wykoczenia wnętrz</Hero>
         <About/>
         <Offer/>
         <Realisation/>

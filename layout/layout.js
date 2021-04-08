@@ -11,6 +11,7 @@ import NavBar from '../components/NavBar';
 const GlobalStyle = createGlobalStyle`
 
 body {
+    width: 100%;
     box-sizing: border-box;
     background: #b0b0b0;
     margin: 0;
@@ -37,6 +38,7 @@ const Layout = ({children}) => {
     return (
         <section>
             <Head>
+                <title>HomeArt</title>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/> 
             </Head>

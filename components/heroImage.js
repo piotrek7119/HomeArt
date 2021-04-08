@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Container = styled.section`
   position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@ const Container = styled.section`
 
   h1 {
       position: absolute;
-      margin: 20px;
+      margin: 0;
        z-index: 2;
        color: #ffffff;
        font-size: 35px;
@@ -46,7 +46,7 @@ object-position: 90% 0;
 
 
 
-const Hero = () => {
+const Hero = ({children}) => {
     return (
         <Container id='home'>
             <ImageStyled
@@ -55,7 +55,7 @@ const Hero = () => {
                 quality={100}
             />
             <h1>
-                Profesjonalne wykoczenia wnętrz
+                {children}
             </h1>
         </Container>
     )

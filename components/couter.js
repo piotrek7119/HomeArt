@@ -10,18 +10,12 @@ const Counter = ({counter}) => (
             const helper = window.scrollY + document.querySelector('#offer').getBoundingClientRect().top 
 
             let start = 0;
-        // first three numbers from props
         const end = parseInt(number.substring(0,3))
-        // if zero, return
         if (start === end) return;
     
-        // find duration per increment
         const totalMilSecDur = parseInt(duration);
-            const incrementTime = (totalMilSecDur / end) * 1000;
+            const incrementTime = (totalMilSecDur / end) * 1500;
         let timer;
-        // timer increments start counter 
-        // then updates count
-        // ends if start reaches end
 
 
 
@@ -43,7 +37,6 @@ const Counter = ({counter}) => (
             })
           
           
-        // dependency array
       }, [number, duration]);
 
         return (
