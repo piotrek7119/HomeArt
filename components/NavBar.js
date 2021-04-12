@@ -14,7 +14,7 @@ const Container = styled.section`
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    background: #222121;
+    background: ${props => props.color ? `#ffffff` : `#222121`};
     
 
     transform: ${props => props.animation ? `translateY(0)` : `translateX(100%) translateY(-100%)`};
@@ -24,39 +24,39 @@ const Container = styled.section`
 
 const AnchorStyled = styled.a`
 
-color: #ffffff;
+color: ${props => props.color ? `#222121` : `#ffffff`};
 font-size: 40px;
 margin: 5px 0 10px 20px;
 cursor: pointer;
 
 `;
 
-const NavBar = ({isVisible, visibility}) => {
+const NavBar = ({isVisible, visibility, color}) => {
 
     return (
-        <Container visible={isVisible} animation={isVisible}>
+        <Container visible={isVisible} animation={isVisible} color={color}>
             <Link href='/#home'>
-                <AnchorStyled onClick={visibility}>
+                <AnchorStyled onClick={visibility} color={color}>
                     HOME
                 </AnchorStyled>
             </Link>
             <Link href='/#about'>
-                <AnchorStyled onClick={visibility}>
+                <AnchorStyled onClick={visibility} color={color}>
                     O NAS
                 </AnchorStyled>
             </Link>
             <Link href='/#offer'>
-                <AnchorStyled onClick={visibility}>
+                <AnchorStyled onClick={visibility} color={color}>
                     OFERTA
                 </AnchorStyled>
             </Link>
             <Link href='/portfolio'>
-                <AnchorStyled onClick={visibility}>
+                <AnchorStyled onClick={visibility} color={color}>
                     REALIZACJA
                 </AnchorStyled>
             </Link>
             <Link href='/#contact'>
-                <AnchorStyled onClick={visibility}>
+                <AnchorStyled onClick={visibility} color={color}>
                     KONTAKT
                 </AnchorStyled>
             </Link>

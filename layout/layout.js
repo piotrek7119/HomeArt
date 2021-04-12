@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {createGlobalStyle} from 'styled-components';
 import Head from 'next/head';
 
@@ -24,6 +24,7 @@ body {
 const Layout = ({children}) => {
 
         const [isVisible, setIsVisible] = useState(false);
+        const [isColor, setIsColor] = useState(false);
 
     const handleClick = () => {
         if(!isVisible) {
@@ -35,6 +36,23 @@ const Layout = ({children}) => {
         }
     }
 
+    useEffect(() => {
+        const helper = window.scrollY + document.querySelector('#home').getBoundingClientRect().bottom 
+
+        window.addEventListener('scroll', () => {
+            let LazyStarter = window.scrollY + 100;
+                if(LazyStarter >= helper) {
+
+                    setIsColor(true);
+                } else {
+                    setIsColor(false)
+                }
+                
+        })
+    });
+
+
+
     return (
         <section>
             <Head>
@@ -43,8 +61,8 @@ const Layout = ({children}) => {
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/> 
             </Head>
             <GlobalStyle/>
-            <Header visibility={isVisible} isVisible={handleClick}/>
-            <NavBar isVisible={isVisible} visibility={handleClick}/>
+            <Header visibility={isVisible} isVisible={handleClick} color={isColor}/>
+            <NavBar isVisible={isVisible} visibility={handleClick} color={isColor}/>
             {children}
             <Footer/>
         </section>
