@@ -78,7 +78,7 @@ const Footer = () => {
                 />
                 <h2>KONTAKT</h2>
                 <a href='tel:+48 506 251 009'>+48 506 251 009</a>
-                <a href='email:biurp@home-art.pl'>biuro@home-art.pl</a>
+                <a href='emailto:biuro@home-art.org'>biuro@home-art.org</a>
             </ContactInfoStyled>
             <ImageOuterStyled>
                 <Image

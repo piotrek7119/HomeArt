@@ -33,6 +33,10 @@ const Container = styled.section`
        font-size: 35px;
        text-align: center;
 
+       @media(min-width: 1024px){
+           font-size:60px;
+       }
+
     }
 `;
 

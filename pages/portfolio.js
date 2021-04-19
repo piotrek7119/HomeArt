@@ -6,6 +6,8 @@ import Layout from "../layout/layout";
 import List from "../components/List";
 import Hero from "../components/heroImage";
 
+import {allItems} from "../data/data";
+
 const Container = styled.section`
 
     width: 100%;
@@ -52,27 +54,14 @@ cursor: pointer;
 
 `;
 
-const items = [
-    {
-        id: 0,
-        name: 'Mariacka 1',
-        image: '/Mariacka 1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra diam at lectus pellentesque congue. Nam vel odio quis odio eleifend mollis. Maecenas condimentum, nibh sed consectetur tempus, justo nunc aliquam sapien, ut suscipit mauris nisl at mi. In ultrices cursus fermentum. ',
-    },
-    {
-        id: 1,
-        name: 'Ruda 1',
-        image: '/Ruda 1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra diam at lectus pellentesque congue. Nam vel odio quis odio eleifend mollis. Maecenas condimentum, nibh sed consectetur tempus, justo nunc aliquam sapien, ut suscipit mauris nisl at mi. In ultrices cursus fermentum. ',
-    },
-]
+
 
 const Portfolio = () => {
     return (
         <Layout>
             <Container>
                 <Hero>Portfolio</Hero>
-                <List items={items}/>
+                <List items={allItems}/>
                 <InnerDiv>
                     <Link href="/">
                     <a>

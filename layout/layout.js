@@ -37,7 +37,7 @@ const Layout = ({children}) => {
     }
 
     useEffect(() => {
-        const helper = window.scrollY + document.querySelector('#home').getBoundingClientRect().bottom 
+        const helper = 650;
 
         window.addEventListener('scroll', () => {
             let LazyStarter = window.scrollY + 100;

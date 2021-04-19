@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import  styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link';
+import { IdContext } from '../context/idContext';
 
 
 
@@ -22,8 +24,33 @@ const Container = styled.section`
 
 `;
 
+const ButtonStyled = styled.button`
+
+
+width: 130px;
+height: 40px;
+
+margin: 10px 0 0 0;
+
+background: #222121;
+border: none;
+border-radius: 25px;
+
+color: #ffffff;
+font-weight: 900;
+cursor: pointer;
+
+`;
+
 const PortfolioList = ({items}) => {
 
+        const {setIsIdNumber} = useContext(IdContext)
+
+        const handleClick = () => {
+            const id = items.id
+            setIsIdNumber(id)
+        }
+        
         return (   
             <Container key={items.id}>
                 <h2>
@@ -38,6 +65,13 @@ const PortfolioList = ({items}) => {
                     width={4032}
                     height={2268}
                 />
+                <Link href={`portfolio/${items.id}`}>
+                    <a  onClick={handleClick}>
+                        <ButtonStyled>
+                            Zobacz więcej z {items.name}
+                        </ButtonStyled>
+                    </a>
+                </Link>
             </Container>
         )
 }
