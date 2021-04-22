@@ -46,7 +46,7 @@ const Offer = () => {
             </div>
             <div>
                 <Image
-                    src='/Mariacka 1.jpg'
+                    src='/Oferta.jpeg'
                     layout='intrinsic'
                     width={4032}
                     height={2268}

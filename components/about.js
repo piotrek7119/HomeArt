@@ -40,12 +40,15 @@ const About = () => {
                     O NAS
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra diam at lectus pellentesque congue. Nam vel odio quis odio eleifend mollis. Maecenas condimentum, nibh sed consectetur tempus, justo nunc aliquam sapien, ut suscipit mauris nisl at mi. In ultrices cursus fermentum. 
+                Jesteśmy rodzinna firmą, z wieloletnim doświadczeniem.
+                Dzięki temu obsługa naszych klientów jest w pełni kompleksowa. Poczynając od projektu i aranżacji przez dobór odpowiednich  materiałów do finalnej realizacji.               
+                W naszej pracy stawaimy na rozwój oraz nowoczesne technologie, które pozwalają na precyzyjne wykończenia, zgodne z wymaganiami naszych klientów.
+                Współpracujemy również z pracownia architektoniczna oraz biurem projektowym, co umożliwia nam wykonanie i realizację nawet najbardziej skomplikowanych projektow. 
                 </p>
             </div>
             <div>
                 <Image
-                    src='/Ruda 1.jpg'
+                    src='/O nas.jpeg'
                     layout='intrinsic'
                     width={4032}
                     height={2268}
