@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 const Container = styled.footer`
     width: 100%;
+    padding: 0;
     margin: 0;
     background: #b2b2b2;
      display: flex;
@@ -12,6 +13,7 @@ const Container = styled.footer`
      align-items: center;
 
      section {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -34,7 +36,7 @@ a {
 }
 
 h2 {
-    margin: 20px 5px 0 0;
+    margin: 20px 0 0 0;
     font-size: 18px;
     color: #ffffff;
 }
@@ -44,7 +46,7 @@ h2 {
 const ImageOuterStyled = styled.div`
 
 width: 50%;
-margin: 15px 0 15px 15px;
+margin: 15px 0 15px 30px;
 `
 
 const InnerDiv = styled.div`
