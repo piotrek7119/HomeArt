@@ -8,7 +8,7 @@ import Link from 'next/link';
 const Container = styled.section`
 
     width: 100%;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     background: #ffffff;
 
@@ -22,24 +22,15 @@ const Container = styled.section`
     }
 
 `;
-
-const ButtonStyled = styled.button`
-
-
-width: 130px;
-height: 40px;
-
-margin: 10px 0 0 0;
-
-background: #222121;
-border: none;
-border-radius: 25px;
-
-color: #ffffff;
-font-weight: 900;
-cursor: pointer;
+const ImageStyled = styled(Image)`
+position: relative;
+width: 100%;
+height: 100vh;
+object-fit: cover;
+object-position: 0;
 
 `;
+
 
 const PortfolioList = ({items}) => {
 
@@ -47,11 +38,12 @@ const PortfolioList = ({items}) => {
         return (   
             <Container>
                 
-                <Image
+                <ImageStyled
                     src={items}
                     layout='intrinsic'
-                    width={4032}
-                    height={2268}
+                    width={400}
+                    height={300}
+                    sizes='(max-width: 600px) 100vw, (max-width: 1023px) 38vw, 23vw'
                 />
                
             </Container>

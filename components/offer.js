@@ -29,6 +29,10 @@ const Container = styled.section`
         p {
             margin: 0 15px 20px 15px;
         }
+        
+        ul {
+            align-self: flex-start;
+        }
     }
     
 `;
@@ -41,15 +45,41 @@ const Offer = () => {
                     OFERTA
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra diam at lectus pellentesque congue. Nam vel odio quis odio eleifend mollis. Maecenas condimentum, nibh sed consectetur tempus, justo nunc aliquam sapien, ut suscipit mauris nisl at mi. In ultrices cursus fermentum. 
+                Oferujemy pelen zakres prac w dziedzinie wykanczania wnetrz m.in:
                 </p>
+                <ul>
+                    <li>
+                    ukladanie glazury
+                    </li>
+                    <li>
+                    gladzie gipsowe
+                    </li>
+                    <li>
+                    tapetowanie
+                    </li>
+                    <li>
+                    malowanie
+                    </li>
+                    <li>
+                    sucha zabudowa
+                    </li>
+                    <li>
+                    ukladanie paneli
+                    </li>
+                    <li>
+                    instalacje wod-kan
+                    </li>
+                    <li>
+                    instalacje elektryczne
+                    </li>
+                </ul>
             </div>
             <div>
                 <Image
                     src='/Oferta.jpeg'
-                    layout='intrinsic'
-                    width={4032}
-                    height={2268}
+                    layout='responsive'
+                    width={300}
+                    height={250}
                 />
             </div>
             

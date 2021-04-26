@@ -44,7 +44,7 @@ const ImageStyled = styled(Image)`
 width: 100%;
 height: 100vh;
 object-fit: cover;
-object-position: 90% 0;
+object-position: 0;
 
 `;
 

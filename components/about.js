@@ -32,6 +32,14 @@ const Container = styled.section`
     
 `;
 
+const ImageStyled = styled(Image)`
+width: 100%;
+height: 100vh;
+object-fit: cover;
+object-position: 0;
+
+`;
+
 const About = () => {
     return (
         <Container id='about'>
@@ -47,11 +55,11 @@ const About = () => {
                 </p>
             </div>
             <div>
-                <Image
+                <ImageStyled
                     src='/O nas.jpeg'
-                    layout='intrinsic'
-                    width={4032}
-                    height={2268}
+                    layout='responsive'
+                    width={300}
+                    height={250}
                 />
             </div>
             

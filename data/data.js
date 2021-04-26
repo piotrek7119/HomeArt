@@ -9,25 +9,25 @@ export const allItems = [
     {
         id: 0,
         name: 'Mariacka',
-        image: '/Mariacka 1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra diam at lectus pellentesque congue. Nam vel odio quis odio eleifend mollis. Maecenas condimentum, nibh sed consectetur tempus, justo nunc aliquam sapien, ut suscipit mauris nisl at mi. In ultrices cursus fermentum. ',
+        image: '/Mariacka.jpg',
+        description: 'Generalny remont z podziałem na małe kawalerki pod wynajem.',
     },
     {
         id: 1,
         name: 'Ruda',
-        image: '/Ruda 1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra diam at lectus pellentesque congue. Nam vel odio quis odio eleifend mollis. Maecenas condimentum, nibh sed consectetur tempus, justo nunc aliquam sapien, ut suscipit mauris nisl at mi. In ultrices cursus fermentum. ',
+        image: '/Ruda.jpg',
+        description: 'Generalny remont mieszkania.',
     },
     {
         id: 2,
         name: 'Chorzów',
-        image: '/Ruda 1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra diam at lectus pellentesque congue. Nam vel odio quis odio eleifend mollis. Maecenas condimentum, nibh sed consectetur tempus, justo nunc aliquam sapien, ut suscipit mauris nisl at mi. In ultrices cursus fermentum. ',
+        image: '/Chorzow.jpg',
+        description: 'Generalny remont mieszkania.',
     },
     {
         id: 3,
         name: 'Załęże',
-        image: '/Ruda 1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra diam at lectus pellentesque congue. Nam vel odio quis odio eleifend mollis. Maecenas condimentum, nibh sed consectetur tempus, justo nunc aliquam sapien, ut suscipit mauris nisl at mi. In ultrices cursus fermentum. ',
+        image: '/Zaleze.jpeg',
+        description: 'Generalny remont łazienki, kuchni oraz salonu.',
     },
 ]

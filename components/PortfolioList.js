@@ -27,8 +27,8 @@ const Container = styled.section`
 const ButtonStyled = styled.button`
 
 
-width: 130px;
-height: 40px;
+width: 150px;
+height: 30px;
 
 margin: 10px 0 0 0;
 
@@ -38,6 +38,7 @@ border-radius: 25px;
 
 color: #ffffff;
 font-weight: 900;
+font-size: 12px;
 cursor: pointer;
 
 `;
@@ -62,8 +63,8 @@ const PortfolioList = ({items}) => {
                 <Image
                     src={items.image}
                     layout='intrinsic'
-                    width={4032}
-                    height={2268}
+                    width={400}
+                    height={320}
                 />
                 <Link href={`portfolio/${items.id}`}>
                     <a  onClick={handleClick}>

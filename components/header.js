@@ -13,10 +13,9 @@ const Container = styled.header`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: ${props => props.color ? `#ffffff` : `transparent`};
-    
-    
+    background: ${props => props.color ? `rgba(255,255,255,.8)` : `transparent`};
 `
+
 
 
 
