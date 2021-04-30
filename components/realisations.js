@@ -18,46 +18,33 @@ const Container = styled.section`
         margin: 15px;
     }
 
-    a {
-        align-self: center;
-        margin: 20px;
-    }
 `;
 
 
-
-const ButtonStyled = styled.button`
-
-width: 150px;
-height: 40px;
-
-background: #222121;
-border: none;
-border-radius: 25px;
-
-color: #ffffff;
-font-weight: 900;
-cursor: pointer;
-
-`;
 
 const data = [
     {
         id: '0',
-        label: "lat w branży",
-        number: "5",
+        label: "wykonanych gładzi",
+        number: "4108",
         duration: 3
     },
     {
         id: '1',
-        label: "% zadowolonych klientów",
-        number: "99",
+        label: "pomalowanych ścian",
+        number: "6893",
         duration: 3
     },
     {
         id: '2',
         label: "wykonanych realizacji",
-        number: "50",
+        number: "28",
+        duration: 3
+    },
+    {
+        id: '3',
+        label: "lata w branży",
+        number: "3",
         duration: 3
     },    
   ]
@@ -72,14 +59,6 @@ const Realisation = () => {
     return (
         <Container id='realisation'>
             <Counter counter={data}/>
-            
-            <Link href="portfolio">
-            <a>
-                <ButtonStyled>
-                    Zobacz realizacje
-                </ButtonStyled>
-            </a>
-            </Link>
         </Container>
     )
 }

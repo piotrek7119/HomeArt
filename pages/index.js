@@ -16,6 +16,8 @@ overflow: hidden;
 
 
 const Home = () => {
+
+
   return (
     <Layout>
       <Container>
@@ -23,7 +25,7 @@ const Home = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Hero>Profesjonalne wykoczenia wnętrz</Hero>
+        <Hero>PROFESJONALNE WYKOŃCZENIA WNĘTRZ</Hero>
         <About/>
         <Offer/>
         <Realisation/>

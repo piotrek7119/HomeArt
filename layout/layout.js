@@ -29,10 +29,8 @@ const Layout = ({children}) => {
     const handleClick = () => {
         if(!isVisible) {
             setIsVisible(!isVisible);
-            console.log(isVisible)
         } else {
             setIsVisible(!isVisible);
-            console.log(isVisible)
         }
     }
 
@@ -42,12 +40,10 @@ const Layout = ({children}) => {
         window.addEventListener('scroll', () => {
             let LazyStarter = window.scrollY + 100;
                 if(LazyStarter >= helper) {
-
                     setIsColor(true);
                 } else {
                     setIsColor(false)
                 }
-                
         })
     });
 

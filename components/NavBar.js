@@ -28,6 +28,7 @@ color: ${props => props.color ? `#222121` : `#ffffff`};
 font-size: 40px;
 margin: 5px 0 10px 20px;
 cursor: pointer;
+text-align: center;
 
 `;
 
@@ -37,7 +38,7 @@ const NavBar = ({isVisible, visibility, color}) => {
         <Container visible={isVisible} animation={isVisible} color={color}>
             <Link href='/#home'>
                 <AnchorStyled onClick={visibility} color={color}>
-                    HOME
+                    STRONA <br/> GŁÓWNA
                 </AnchorStyled>
             </Link>
             <Link href='/#about'>
@@ -52,7 +53,7 @@ const NavBar = ({isVisible, visibility, color}) => {
             </Link>
             <Link href='/portfolio'>
                 <AnchorStyled onClick={visibility} color={color}>
-                    REALIZACJA
+                    REALIZACJE
                 </AnchorStyled>
             </Link>
             <Link href='/#contact'>

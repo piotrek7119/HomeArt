@@ -29,6 +29,7 @@ const Container = styled.section`
       position: absolute;
       margin: 0;
        z-index: 2;
+       top: 30%;
        color: #ffffff;
        font-size: 35px;
        text-align: center;

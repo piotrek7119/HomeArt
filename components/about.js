@@ -14,8 +14,6 @@ const Container = styled.section`
     justify-content: center;
     align-items: center;
 
-    
-
     div {
 
         width: 100%;
@@ -24,12 +22,12 @@ const Container = styled.section`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-            
+
         p {
             margin: 0 15px 20px 15px;
+            text-align: center;
         }
     }
-    
 `;
 
 const ImageStyled = styled(Image)`

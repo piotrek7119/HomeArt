@@ -24,7 +24,7 @@ const Container = styled.footer`
 
 const ContactInfoStyled = styled.div`
 
-width: 50%;
+width: 60%;
 margin: 15px;
 display: flex;
 flex-direction: column;
@@ -33,11 +33,13 @@ align-items: flex-start;
 a {
     color: #ffffff;
     margin: 7px 5px 0 0;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 h2 {
     margin: 20px 0 0 0;
-    font-size: 18px;
+    font-size: 20px;
     color: #ffffff;
 }
 
@@ -45,8 +47,8 @@ h2 {
 
 const ImageOuterStyled = styled.div`
 
-width: 50%;
-margin: 15px 0 15px 30px;
+width: 40%;
+margin: 15px 0 15px 0;
 `
 
 const InnerDiv = styled.div`
@@ -55,11 +57,12 @@ width: 100%;
 margin: 0;
 background: #222121;
 z-index: 99;
-color: white;
+text-decoration: none;
+
 
 p {
-    margin: 3px;
-    font-size: 10px;
+    margin: 5px 0 0 15px;
+    font-size: 9px;
     text-decoration: none;
     color: #ffffff;
 }
