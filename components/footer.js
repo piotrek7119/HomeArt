@@ -43,6 +43,11 @@ h2 {
     color: #ffffff;
 }
 
+
+ul {
+    list-style:none;
+    padding: 0;
+}
 `
 
 const ImageOuterStyled = styled.div`
@@ -62,12 +67,26 @@ text-decoration: none;
 
 p {
     margin: 5px 0 0 15px;
-    font-size: 9px;
+    font-size: 11px;
     text-decoration: none;
     color: #ffffff;
 }
 `;
 
+const PhoneContactStyled = styled.li`
+    height: 20px;
+    background: url('phone.svg') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 5px;
+
+`;
+
+const MailStyled = styled.li`
+    height: 20px;
+    background: url('mail.svg') no-repeat left center;
+    padding-left: 30px;
+
+`;
 
 
 const Footer = () => {
@@ -82,8 +101,14 @@ const Footer = () => {
                     height={30}
                 />
                 <h2>KONTAKT</h2>
-                <a href='tel:+48 506 251 009'>+48 506 251 009</a>
-                <a href='emailto:biuro@home-art.org'>biuro@home-art.org</a>
+                <ul>
+                    <PhoneContactStyled>
+                        <a href='tel:+48 506 251 009'>+48 506 251 009</a>
+                    </PhoneContactStyled>
+                    <MailStyled>
+                        <a href='emailto:biuro@home-art.org'>biuro@home-art.org</a>
+                    </MailStyled>
+                </ul>
             </ContactInfoStyled>
             <ImageOuterStyled>
                 <Image
@@ -99,7 +124,6 @@ const Footer = () => {
                 <p>NIP: 6342981352</p>
                 <p>REGON: 387020793</p>
             </InnerDiv>
-            
         </Container>
     )
 }

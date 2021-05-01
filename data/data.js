@@ -8,26 +8,22 @@ export const Zaleze = ['/Załęże/z0.jpeg', '/Załęże/z1.jpeg', '/Załęże/z
 export const allItems = [
     {
         id: 0,
-        name: 'Mariacka',
-        image: '/Mariacka.jpg',
-        description: 'Generalny remont z podziałem na małe kawalerki pod wynajem.',
+        name: 'Miejska sielanka',
+        image: '/Zaleze.jpeg',
     },
     {
         id: 1,
-        name: 'Ruda',
-        image: '/Ruda.jpg',
-        description: 'Generalny remont mieszkania.',
+        name: 'Kawalerki w kamienicy',
+        image: '/Mariacka.jpg',
     },
     {
         id: 2,
-        name: 'Chorzów',
+        name: 'Pod klucz',
         image: '/Chorzow.jpg',
-        description: 'Generalny remont mieszkania.',
     },
     {
         id: 3,
-        name: 'Załęże',
-        image: '/Zaleze.jpeg',
-        description: 'Generalny remont łazienki, kuchni oraz salonu.',
+        name: 'Proste, po prostu',
+        image: '/Ruda.jpg',
     },
 ]

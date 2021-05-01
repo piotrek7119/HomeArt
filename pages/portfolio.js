@@ -25,7 +25,7 @@ const Portfolio = () => {
     return (
         <Layout>
             <Container>
-                <Hero>Portfolio</Hero>
+                <Hero>NASZE REALIZACJE</Hero>
                 <List items={allItems}/>
             </Container>
         </Layout>

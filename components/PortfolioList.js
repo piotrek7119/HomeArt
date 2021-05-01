@@ -17,30 +17,6 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    p {
-        margin: 15px;
-    }
-
-`;
-
-const ButtonStyled = styled.button`
-
-
-width: 160px;
-height: 40px;
-
-margin: 10px 0 0 0;
-
-background: #222121;
-border: none;
-border-radius: 25px;
-
-color: #ffffff;
-font-weight: 900;
-font-size: 12px;
-cursor: pointer;
-
 `;
 
 const PortfolioList = ({items}) => {
@@ -57,9 +33,6 @@ const PortfolioList = ({items}) => {
                 <h2>
                     {items.name}
                 </h2>
-                <p>
-                    {items.description}
-                </p>
                 <Link href={`portfolio/${items.id}`}>
                     <a  onClick={handleClick}>
                     <Image

@@ -4,6 +4,7 @@ import Image from "next/image";
 
 
 const Container = styled.section`
+scroll-margin-top: 80px;
 
     width: 100%;
     margin: 0;
@@ -27,70 +28,106 @@ const Container = styled.section`
             margin: 0 15px 20px 15px;
             text-align: center;
         }
-
-        ul {
-            align-self: flex-start;
-            list-style:none;
-            transform: ${props => props.animation ? `translateX(0)` : `translateX(-200%)`};
-            transition: all 0.3s ease-in-out;
-
-            li {
-                height: 26px;
-                background: url('arrow-right-o.svg') no-repeat left center;
-                padding-left: 30px;
-                padding-top: 5px;
-                margin: 5px 0;
-            }
-
-        }
     }
 `;
 
+const UnorderedListStyled = styled.ul`
+
+    align-self: flex-start;
+    list-style:none;
+    transform: ${props => props.animation ? `translateX(0)` : `translateX(-200%)`};
+    transition: all 0.5s ease-out;
+`;
+
 const ListStyled = styled.li`
+    height: 26px;
+    background: url('arrow-right-o.svg') no-repeat left center;
+    padding-left: 30px;
+    padding-top: 5px;
+    margin: 5px 0;
+    
+`;
+
+const SubjectStyled = styled.h2`
+
+position: relative;
+
+&::before {
+    content: '';
+    position: absolute;
+    right: 120%;
+    top: 50%;
+    height: 3px;
+    width: 40px;
+    background: #000;
+
+}
 
 
-
+&::after {
+    content: '';
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    height: 3px;
+    width: 40px;
+    background: #000;
+}
 
 `;
 
 const Offer = () => {
+    const [isVisible, setIsVisible] = useState(false);
 
+
+    useEffect(() => {
+        const helper = window.scrollY + document.querySelector('#offer').getBoundingClientRect().top 
+
+        window.addEventListener('scroll', () => {
+            let LazyStarter = window.scrollY + 400;
+                if(LazyStarter >= helper) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false)
+                }
+        })
+    });
 
     return (
         <Container id='offer'>
             <div>
-                <h2>
+                <SubjectStyled>
                     OFERTA
-                </h2>
+                </SubjectStyled>
                 <p>
                 Oferujemy pelen zakres prac w dziedzinie wykanczania wnetrz m.in:
                 </p>
-                <ul>
-                    <li>
+                <UnorderedListStyled  animation={isVisible}>
+                    <ListStyled>
                     ukladanie glazury
-                    </li>
-                    <li>
+                    </ListStyled>
+                    <ListStyled>
                     gladzie gipsowe
-                    </li>
-                    <li>
+                    </ListStyled>
+                    <ListStyled>
                     tapetowanie
-                    </li>
-                    <li>
+                    </ListStyled>
+                    <ListStyled>
                     malowanie
-                    </li>
-                    <li>
+                    </ListStyled>
+                    <ListStyled>
                     sucha zabudowa
-                    </li>
-                    <li>
+                    </ListStyled>
+                    <ListStyled>
                     ukladanie paneli
-                    </li>
-                    <li>
+                    </ListStyled>
+                    <ListStyled>
                     instalacje wod-kan
-                    </li>
-                    <li>
+                    </ListStyled>
+                    <ListStyled>
                     instalacje elektryczne
-                    </li>
-                </ul>
+                    </ListStyled>
+                </UnorderedListStyled>
             </div>
             <div>
                 <Image

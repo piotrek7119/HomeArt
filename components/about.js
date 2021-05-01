@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Image from "next/image";
 
 const Container = styled.section`
+scroll-margin-top: 80px;
 
     width: 100%;
     margin: 0;
@@ -38,13 +39,41 @@ object-position: 0;
 
 `;
 
+const SubjectStyled = styled.h2`
+
+position: relative;
+
+&::before {
+    content: '';
+    position: absolute;
+    right: 120%;
+    top: 50%;
+    height: 3px;
+    width: 40px;
+    background: #000;
+
+}
+
+
+&::after {
+    content: '';
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    height: 3px;
+    width: 40px;
+    background: #000;
+}
+
+`;
+
 const About = () => {
     return (
         <Container id='about'>
             <div>
-                <h2>
+                <SubjectStyled>
                     O NAS
-                </h2>
+                </SubjectStyled>
                 <p>
                 Jesteśmy rodzinna firmą, z wieloletnim doświadczeniem.
                 Dzięki temu obsługa naszych klientów jest w pełni kompleksowa. Poczynając od projektu i aranżacji przez dobór odpowiednich  materiałów do finalnej realizacji.               
