@@ -15,7 +15,6 @@ const Container = styled.section`
     align-items: center;
     z-index: 9999;
     background: ${props => props.color ? `#ffffff` : `#222121`};
-    
 
     transform: ${props => props.animation ? `translateY(0)` : `translateX(100%) translateY(-100%)`};
     transition: all 0.4s ease-in-out;
@@ -24,11 +23,11 @@ const Container = styled.section`
 
 const AnchorStyled = styled.a`
 
-color: ${props => props.color ? `#222121` : `#ffffff`};
-font-size: 40px;
-margin: 5px 0 10px 20px;
-cursor: pointer;
-text-align: center;
+    color: ${props => props.color ? `#222121` : `#ffffff`};
+    font-size: 40px;
+    margin: 5px 0 10px 20px;
+    cursor: pointer;
+    text-align: center;
 
 `;
 
