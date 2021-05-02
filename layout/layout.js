@@ -16,7 +16,7 @@ body {
     background: #b0b0b0;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Asap', sans-serif;
     scroll-behavior: smooth;
 }
 `
@@ -55,7 +55,7 @@ const Layout = ({children}) => {
             <Head>
                 <title>HomeArt</title>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/> 
+                <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet"/>    
             </Head>
             <GlobalStyle/>
             <Header visibility={isVisible} isVisible={handleClick} color={isColor}/>
