@@ -77,7 +77,7 @@ const Paragraph = styled.p`
 
 const PhoneContactStyled = styled.li`
     height: 20px;
-    background: url('phone.svg') no-repeat left center;
+    background: url('./phone.svg') no-repeat left center;
     padding-left: 30px;
     margin-bottom: 5px;
 
@@ -85,7 +85,7 @@ const PhoneContactStyled = styled.li`
 
 const MailStyled = styled.li`
     height: 20px;
-    background: url('mail.svg') no-repeat left center;
+    background: url('./mail.svg') no-repeat left center;
     padding-left: 30px;
 
 `;
