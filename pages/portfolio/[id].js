@@ -34,33 +34,36 @@ const realizationsMore = () => {
     
     const [isValue, setIsValue] = useState([])
     const [isName, setIsName] = useState("")
+    const [isImage, setIsImage] = useState("");
 
 
    useEffect(() => {
-    if(isIdNumber === 0) {
-        setIsValue(Mariacka)   
+      if(isIdNumber === 0) {
+        setIsValue(Zaleze)
         setIsName(allItems[0].name)
+        setIsImage(allItems[0].image)
       }
       if(isIdNumber === 1) {
-        setIsValue(Ruda)   
+        setIsValue(Mariacka)   
         setIsName(allItems[1].name)
+        setIsImage(allItems[1].image)
       }
       if(isIdNumber === 2) {
         setIsValue(Chorzow)   
         setIsName(allItems[2].name)
+        setIsImage(allItems[2].image)
       }
       if(isIdNumber === 3) {
-        setIsValue(Zaleze)   
+        setIsValue(Ruda)   
         setIsName(allItems[3].name)
+        setIsImage(allItems[3].image)
       }
    })
-   
-  
 
     return (
         <Layout>
             <Container>
-              <Hero>{isName}</Hero>
+              <Hero image={isImage}>{isName}</Hero>
                 <ListSec items={isValue}/>
             </Container>
         </Layout>

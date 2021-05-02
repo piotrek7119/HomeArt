@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
 
 import Layout from "../layout/layout";
 import List from "../components/List";
@@ -25,7 +24,7 @@ const Portfolio = () => {
     return (
         <Layout>
             <Container>
-                <Hero>NASZE REALIZACJE</Hero>
+                <Hero image='/HeroImage.jpg'>NASZE REALIZACJE</Hero>
                 <List items={allItems}/>
             </Container>
         </Layout>

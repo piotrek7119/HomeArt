@@ -18,7 +18,7 @@ scroll-margin-top: 80px;
 
     div {
 
-        width: 100%;
+        width: 90%;
         margin: 15px;
         display: flex;
         flex-direction: column;

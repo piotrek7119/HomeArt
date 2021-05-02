@@ -27,12 +27,14 @@ const Container = styled.section`
 
   h1 {
       position: absolute;
+      width: 80%;
       margin: 0;
        z-index: 2;
        top: 30%;
        color: #ffffff;
        font-size: 35px;
        text-align: center;
+       text-transform: uppercase;
 
        @media(min-width: 1024px){
            font-size:60px;
@@ -45,20 +47,22 @@ const ImageStyled = styled(Image)`
 width: 100%;
 height: 100vh;
 object-fit: cover;
-object-position: 0;
+object-position: 20%;
 
 `;
 
 
 
-const Hero = ({children}) => {
+const Hero = ({children, image}) => {
     return (
         <Container id='home'>
+            {image.length > 0 && (
             <ImageStyled
-                src='/HeroImage.jpg'
+                src={image}
                 layout='fill'
                 quality={100}
             />
+            )}
             <h1>
                 {children}
             </h1>

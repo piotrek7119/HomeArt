@@ -25,7 +25,7 @@ const Home = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Hero>PROFESJONALNE WYKOŃCZENIA WNĘTRZ</Hero>
+        <Hero image='/HeroImage.jpg'>PROFESJONALNE WYKOŃCZENIA WNĘTRZ</Hero>
         <About/>
         <Offer/>
         <Realisation/>

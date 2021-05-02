@@ -64,13 +64,15 @@ background: #222121;
 z-index: 99;
 text-decoration: none;
 
+`;
 
-p {
+const Paragraph = styled.p`
+
     margin: 5px 0 0 15px;
     font-size: 11px;
     text-decoration: none;
     color: #ffffff;
-}
+
 `;
 
 const PhoneContactStyled = styled.li`
@@ -120,9 +122,9 @@ const Footer = () => {
             </ImageOuterStyled>
             </section>
             <InnerDiv>
-                <p>HomeArt Szymon Pawliński</p>
-                <p>NIP: 6342981352</p>
-                <p>REGON: 387020793</p>
+                <Paragraph>HomeArt Szymon Pawliński</Paragraph>
+                <Paragraph>NIP: 6342981352</Paragraph>
+                <Paragraph>REGON: 387020793</Paragraph>
             </InnerDiv>
         </Container>
     )

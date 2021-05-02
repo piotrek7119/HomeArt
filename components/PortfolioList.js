@@ -8,7 +8,7 @@ import { IdContext } from '../context/idContext';
 
 const Container = styled.section`
 
-    width: 100%;
+    width: 80%;
     margin: 0;
     padding: 0;
     background: #ffffff;

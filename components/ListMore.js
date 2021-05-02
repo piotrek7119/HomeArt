@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 const Container = styled.section`
 
-    width: 100%;
-    margin: 10px;
+    width: 80%;
+    margin: 20px;
     padding: 0;
     background: #ffffff;
 

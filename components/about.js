@@ -15,21 +15,22 @@ scroll-margin-top: 80px;
     justify-content: center;
     align-items: center;
 
-    div {
-
-        width: 100%;
-        margin: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        div {
+            width: 90%;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         p {
             margin: 0 15px 20px 15px;
             text-align: center;
         }
-    }
+    
 `;
+
 
 const ImageStyled = styled(Image)`
 width: 100%;
@@ -67,10 +68,54 @@ position: relative;
 
 `;
 
+const MottoStyle = styled.div`
+    margin: 20px;
+    padding: 1em;
+    border: 0.25em solid #000;
+    position: relative;
+
+
+&::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fff;
+    top: -0.3em; // let it overlap a bit to prevent thin line which could appear during scaling in some browsers etc.
+    bottom: -0.3em;
+    left: 1em;
+    right: 1em;
+
+}
+
+
+&::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fff;
+    left: -0.3em;
+    right: -0.3em;
+    top: 1em;
+    bottom: 1em;
+}
+`;
+
+const Paragraph = styled.p`
+    position: relative;
+    font-style: italic;
+    z-index: 1;
+
+`;
+
 const About = () => {
     return (
         <Container id='about'>
             <div>
+                <MottoStyle>
+                    <Paragraph>
+                        "Wykończenia wnętrz są sztuką ciągle dążącą do perfekcji, której celem jest tworzenie przestrzeni idealnych dla klienta."
+                    </Paragraph>
+                </MottoStyle>
                 <SubjectStyled>
                     O NAS
                 </SubjectStyled>
@@ -89,7 +134,6 @@ const About = () => {
                     height={250}
                 />
             </div>
-            
         </Container>
     )
 }
