@@ -19,6 +19,34 @@ const Container = styled.section`
     justify-content: center;
 `;
 
+const SubjectStyled = styled.h2`
+
+position: relative;
+
+&::before {
+    content: '';
+    position: absolute;
+    right: 110%;
+    top: 50%;
+    height: 3px;
+    width: 40px;
+    background: #000;
+
+}
+
+
+&::after {
+    content: '';
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    height: 3px;
+    width: 40px;
+    background: #000;
+}
+
+`;
+
 const PortfolioList = ({items}) => {
 
         const {setIsIdNumber} = useContext(IdContext)
@@ -30,9 +58,9 @@ const PortfolioList = ({items}) => {
         
         return (   
             <Container key={items.id}>
-                <h2>
+                <SubjectStyled>
                     {items.name}
-                </h2>
+                </SubjectStyled>
                 <Link href={`portfolio/${items.id}`}>
                     <a  onClick={handleClick}>
                     <Image

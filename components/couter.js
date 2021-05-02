@@ -8,9 +8,7 @@ const Container = styled.section`
 
     width: 100%;
 
-    margin:0;
-    padding: 0;
-
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;

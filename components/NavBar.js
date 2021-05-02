@@ -18,26 +18,29 @@ const Container = styled.section`
 
     transform: ${props => props.animation ? `translateY(0)` : `translateX(100%) translateY(-100%)`};
     transition: all 0.4s ease-in-out;
+    
 
 `;
 
 const AnchorStyled = styled.a`
 
-    color: ${props => props.color ? `#222121` : `#ffffff`};
-    font-size: 40px;
-    margin: 5px 0 10px 20px;
+    font-size: 35px;
+    margin: 15px 0;
     cursor: pointer;
     text-align: center;
+    color: ${props => props.color ? `#222121` : `#ffffff`};
+
 
 `;
 
 const NavBar = ({isVisible, visibility, color}) => {
 
+
     return (
         <Container visible={isVisible} animation={isVisible} color={color}>
             <Link href='/#home'>
                 <AnchorStyled onClick={visibility} color={color}>
-                    STRONA <br/> GŁÓWNA
+                    STRONA GŁÓWNA
                 </AnchorStyled>
             </Link>
             <Link href='/#about'>
