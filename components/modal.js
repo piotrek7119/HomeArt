@@ -21,9 +21,9 @@ const Container = styled.section`
 
 const ImageStyled = styled.img`
 
-width: 80%;
+width: 75%;
 height: auto;
-
+max-height: 70%;
 
 `;
 
