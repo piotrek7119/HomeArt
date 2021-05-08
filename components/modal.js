@@ -9,14 +9,14 @@ const Container = styled.section`
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 99999;
 
     display: ${props => props.visibility ? 'flex' : 'none'};
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .85);
 `;
 
 const ImageStyled = styled.img`
