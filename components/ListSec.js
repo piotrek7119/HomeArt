@@ -16,9 +16,25 @@ const Container = styled.section`
 
 `;
 
+const InnerDiv = styled.div`
+justify-items: center;
+width: 100%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+`;
+
+
 const List = ({items}) => {
     return(
         <Container>
+            <InnerDiv>
             {
             items.map(item => {
                 return(
@@ -26,6 +42,7 @@ const List = ({items}) => {
                 )
             })
         }
+        </InnerDiv>
         </Container>
         
     )

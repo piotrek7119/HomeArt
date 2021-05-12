@@ -5,20 +5,38 @@ import PortfolioList from "../components/PortfolioList";
 const Container = styled.section`
 
     width: 100%;
-    margin: 50px 0 50px 0;
     padding: 0;
     background: #ffffff;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+  
 
 `;
+
+const InnerDiv = styled.div`
+justify-items: center;
+width: 100%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 10px;
+
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        }
+
+
+`;
+
+
 
 const List = ({items}) => {
     return(
         <Container>
+            <InnerDiv>
             {
             items.map(item => {
                 return(
@@ -26,6 +44,7 @@ const List = ({items}) => {
                 )
             })
         }
+        </InnerDiv>
         </Container>
         
     )

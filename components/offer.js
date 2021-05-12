@@ -31,6 +31,30 @@ scroll-margin-top: 80px;
     }
 `;
 
+const InnerDiv = styled.section`
+
+
+            width: 100%;
+            margin: 15px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        p {
+            margin: 0 15px 20px 15px;
+            text-align: center;
+        }
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    
+
+`
+
 const UnorderedListStyled = styled.ul`
 
     align-self: flex-start;
@@ -95,8 +119,10 @@ const Offer = () => {
 
     return (
         <Container id='offer'>
+           
+                <InnerDiv>
             <div>
-                <SubjectStyled>
+            <SubjectStyled>
                     OFERTA
                 </SubjectStyled>
                 <p>
@@ -132,11 +158,12 @@ const Offer = () => {
             <div>
                 <Image
                     src='/Oferta.jpeg'
-                    layout='responsive'
-                    width={300}
-                    height={250}
+                    layout='intrinsic'
+                    width={600}
+                    height={700}
                 />
             </div>
+            </InnerDiv>
         </Container>
     )
 }

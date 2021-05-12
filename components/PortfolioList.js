@@ -7,9 +7,9 @@ import { IdContext } from '../context/idContext';
 
 
 const Container = styled.section`
-
+    overflow: hidden;
     width: 80%;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
     background: #ffffff;
 
@@ -45,6 +45,10 @@ position: relative;
     background: #000;
 }
 
+@media (min-width: 1024px) {
+font-size: 30px;
+}
+
 `;
 
 const PortfolioList = ({items}) => {
@@ -66,8 +70,8 @@ const PortfolioList = ({items}) => {
                     <Image
                         src={items.image}
                         layout='intrinsic'
-                        width={400}
-                        height={320}
+                        width={600}
+                        height={600}
                     />
                     </a>
                 </Link>

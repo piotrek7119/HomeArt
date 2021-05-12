@@ -9,7 +9,7 @@ import Modal from './modal';
 const Container = styled.section`
 
     width: 80%;
-    margin: 20px;
+    margin: 0 0 50px 0;
     padding: 0;
     background: #ffffff;
 
@@ -21,6 +21,11 @@ const Container = styled.section`
     p {
         margin: 15px;
     }
+
+    @media (min-width: 1024px) {
+        width: 90%;
+        }
+    
 
 `;
 const ImageStyled = styled(Image)`
@@ -52,8 +57,8 @@ const PortfolioList = ({items}) => {
                 <ImageStyled
                     src={items}
                     layout='intrinsic'
-                    width={400}
-                    height={300}
+                    width={600}
+                    height={600}
                     sizes='(max-width: 600px) 100vw, (max-width: 1023px) 38vw, 23vw'
                     onClick={handleClick}
                 />

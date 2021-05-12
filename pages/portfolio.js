@@ -10,15 +10,18 @@ import {allItems} from "../data/data";
 const Container = styled.section`
 
     width: 100%;
-    margin: 0;
     padding: 0;
 
-    background: #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
+
+
 `;
+
+
 
 const Portfolio = () => {
     return (

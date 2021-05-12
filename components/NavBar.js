@@ -18,6 +18,10 @@ const Container = styled.section`
 
     transform: ${props => props.animation ? `translateY(0)` : `translateX(100%) translateY(-100%)`};
     transition: all 0.4s ease-in-out;
+
+    @media (min-width: 1024px) {
+            display: none;
+        }
     
 
 `;

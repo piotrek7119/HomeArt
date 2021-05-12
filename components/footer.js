@@ -41,6 +41,7 @@ h2 {
     margin: 20px 0 0 0;
     font-size: 20px;
     color: #ffffff;
+    
 }
 
 
@@ -48,12 +49,22 @@ ul {
     list-style:none;
     padding: 0;
 }
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 50px;
+    }
+}
+
 `
 
 const ImageOuterStyled = styled.div`
-
 width: 40%;
-margin: 15px 0 15px 0;
+margin: 15px 15px 15px 0;
+
+@media (min-width: 1024px) {
+    margin: 30px 15px 30px 0;
+}
 `
 
 const InnerDiv = styled.div`
@@ -73,6 +84,11 @@ const Paragraph = styled.p`
     text-decoration: none;
     color: #ffffff;
 
+    @media (min-width: 1024px) {
+        font-size: 20px;
+    }
+
+
 `;
 
 const PhoneContactStyled = styled.li`
@@ -81,6 +97,16 @@ const PhoneContactStyled = styled.li`
     padding-left: 30px;
     margin-bottom: 5px;
 
+    @media (min-width: 1024px) {
+        height: 40px;
+        padding-left: 50px;
+        margin-bottom: 5px;
+
+        a {
+            font-size: 30px;
+        }
+    }
+
 `;
 
 const MailStyled = styled.li`
@@ -88,6 +114,15 @@ const MailStyled = styled.li`
     background: url('../../mail.svg') no-repeat left center;
     padding-left: 30px;
 
+    @media (min-width: 1024px) {
+        height: 40px;
+        padding-left: 50px;
+        margin-bottom: 5px;
+
+        a {
+            font-size: 30px;
+        }
+    }
 `;
 
 
@@ -98,9 +133,9 @@ const Footer = () => {
             <ContactInfoStyled>
                 <Image
                     src='/HOMEART text.png'
-                    layout='fixed'
-                    width={150}
-                    height={30}
+                    layout='intrinsic'
+                    width={400}
+                    height={80}
                 />
                 <h2>KONTAKT</h2>
                 <ul>
@@ -115,9 +150,9 @@ const Footer = () => {
             <ImageOuterStyled>
                 <Image
                     src='/HOMEART white.png'
-                    layout='fixed'
-                    width={110}
-                    height={100}
+                    layout='intrinsic'
+                    width={300}
+                    height={300}
                 />
             </ImageOuterStyled>
             </section>

@@ -21,10 +21,18 @@ const Container = styled.section`
 
 const ImageStyled = styled.img`
 
-width: 75%;
-height: auto;
-max-height: 70%;
+@media (max-width: 1024px) {
+    width: 75%;
+    height: auto;
+    max-height: 70%;
+    }
 
+
+@media (min-width: 1024px) {
+    width: auto;
+    height: 90%;
+    max-width: 90%;
+    }
 `;
 
 const HamburgerButtonStyled = styled.button`

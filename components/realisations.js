@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import React from 'react';
 import styled from 'styled-components';
 import Counter from './couter';
@@ -13,10 +13,17 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    
     h2 {
         margin: 15px;
     }
+
+
+    @media (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-around;
+            height: 300px;
+        }
 
 `;
 

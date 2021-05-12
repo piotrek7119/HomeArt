@@ -37,7 +37,7 @@ const Container = styled.section`
        text-transform: uppercase;
 
        @media(min-width: 1024px){
-           font-size:60px;
+           font-size:50px;
        }
 
     }
